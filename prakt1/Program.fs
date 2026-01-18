@@ -7,10 +7,10 @@ open Lists
 
 [<EntryPoint>]
 let main argv =
-    // UTF-8 для української мови
+    
     Console.OutputEncoding <- Encoding.UTF8
 
-    // 1. Hello, world
+    
     printfn "Привіт! Це моя перша програма на функціональній мові."
 
     printfn "\n=== Чисті функції ==="
@@ -34,3 +34,4 @@ let main argv =
         (sumOfEvenSquares [1;2;3;4])
 
     0
+
