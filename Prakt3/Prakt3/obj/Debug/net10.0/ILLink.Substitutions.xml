@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="Prakt3">
+    <resource name="FSharpSignatureData.Prakt3" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.Prakt3" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.Prakt3" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.Prakt3" action="remove"></resource>
+    <resource name="FSharpOptimizationData.Prakt3" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.Prakt3" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.Prakt3" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.Prakt3" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.Prakt3" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.Prakt3" action="remove"></resource>
+  </assembly>
+</linker>
