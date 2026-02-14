@@ -1,0 +1,46 @@
+
+% Стать (male/1, female/1)
+male(petro).
+male(ivan).
+male(oleksii).
+male(andrii).
+male(danylo).
+
+female(olena).
+female(marta).
+female(mariia).
+female(nataliia).
+
+% Батьківство (parent/2: БатькоАбоМати, Дитина)
+% Старше покоління (Петро та Олена)
+parent(petro, ivan).
+parent(petro, mariia).
+parent(olena, ivan).
+parent(olena, mariia).
+
+% Сім'я Івана та Наталії
+parent(ivan, andrii).
+parent(ivan, marta).
+parent(nataliia, andrii).
+parent(nataliia, marta).
+
+% Сім'я Марії та Олексія
+parent(mariia, danylo).
+parent(oleksii, danylo).
+
+% Шлюб (married/2)
+married(petro, olena).
+married(ivan, nataliia).
+married(oleksii, mariia).
+
+
+% Дідусь або бабуся
+grandparent(GP, GC) :- 
+    parent(GP, Parent), 
+    parent(Parent, GC).
+
+% Брат або сестра
+sibling(X, Y) :- 
+    parent(P, X), 
+    parent(P, Y), 
+    X \= Y.
